@@ -10,8 +10,6 @@ var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4, obstacle5, obsta
 
 var score=0;
 
-var hi;
-
 var gameOver, restart;
 
 localStorage["HighestScore"] = 0;
@@ -44,8 +42,6 @@ function setup() {
   trex.addAnimation("collided", trex_collided);
   trex.scale = 0.5;
   
-  hi = createSprite(20,20,200,300);
-
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
